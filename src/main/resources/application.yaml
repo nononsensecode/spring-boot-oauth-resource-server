@@ -1,0 +1,14 @@
+server:
+  port: 10001
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+# Below configuration is needed if you want resource server to start independently rather than
+# with the authorization server
+          jwk-set-uri: http://localhost:9000/auth/realms/heroes/protocol/openid-connect/certs
+# If you want the resource server to be dependent of the authorization server you
+# have to use the following configuration instead of the above one.
+#          issuer-uri: http://localhost:9000/auth/realms/heroes
