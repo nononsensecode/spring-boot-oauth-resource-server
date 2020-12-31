@@ -2,7 +2,7 @@ package com.nononsensecode.oauth.controller
 
 import org.springframework.web.bind.annotation.*
 
-@CrossOrigin(origins = ["http://localhost:4200", "http://localhost:8000"])
+@CrossOrigin(origins = ["http://localhost:4200", "http://localhost:8000", "https://localhost"])
 @RestController
 @RequestMapping("/api/heroes")
 class HeroController {
